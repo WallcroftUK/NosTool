@@ -1,0 +1,14 @@
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\bin\Debug\net8.0\NosTool.DataAccess.MSSQL.deps.json
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\bin\Debug\net8.0\NosTool.DataAccess.MSSQL.runtimeconfig.json
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\bin\Debug\net8.0\NosTool.DataAccess.MSSQL.dll
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\bin\Debug\net8.0\NosTool.DataAccess.MSSQL.pdb
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\obj\Debug\net8.0\NosTool.DataAccess.MSSQL.csproj.AssemblyReference.cache
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\obj\Debug\net8.0\NosTool.DataAccess.MSSQL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\obj\Debug\net8.0\NosTool.DataAccess.MSSQL.AssemblyInfoInputs.cache
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\obj\Debug\net8.0\NosTool.DataAccess.MSSQL.AssemblyInfo.cs
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\obj\Debug\net8.0\NosTool.DataAccess.MSSQL.csproj.CoreCompileInputs.cache
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\obj\Debug\net8.0\NosTool.DataAccess.MSSQL.dll
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\obj\Debug\net8.0\refint\NosTool.DataAccess.MSSQL.dll
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\obj\Debug\net8.0\NosTool.DataAccess.MSSQL.pdb
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\obj\Debug\net8.0\NosTool.DataAccess.MSSQL.genruntimeconfig.cache
+C:\Users\Wallcroft\Documents\GitHub\NosTool\src\plugins\NosTool.DataAccess\obj\Debug\net8.0\ref\NosTool.DataAccess.MSSQL.dll

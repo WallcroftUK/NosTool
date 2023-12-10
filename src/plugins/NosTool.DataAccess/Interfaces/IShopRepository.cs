@@ -1,15 +1,34 @@
 ﻿using NosTool.DataAccess.MSSQL.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NosTool.DataAccess.Interfaces
 {
+    /// <summary>
+    /// Represents a repository for managing shops.
+    /// </summary>
     public interface IShopRepository
     {
+        /// <summary>
+        /// Retrieves a list of shops from the database.
+        /// </summary>
+        /// <returns>A list of shop entities.</returns>
         List<ShopEntity> GetShops();
-        // Add more methods for other entities or operations as needed
+
+        /// <summary>
+        /// Adds a new shop to the database.
+        /// </summary>
+        /// <param name="shop">The shop entity to add.</param>
+        void AddShop(ShopEntity shop);
+
+        /// <summary>
+        /// Updates an existing shop in the database.
+        /// </summary>
+        /// <param name="shop">The updated shop entity.</param>
+        void UpdateShop(ShopEntity shop);
+
+        /// <summary>
+        /// Deletes a shop from the database based on its ID.
+        /// </summary>
+        /// <param name="shopId">The ID of the shop to delete.</param>
+        void DeleteShop(int shopId);
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NosTool.DataAccess.MSSQL.Entities
+﻿namespace NosTool.DataAccess.MSSQL.Entities
 {
     public class ShopEntity
     {

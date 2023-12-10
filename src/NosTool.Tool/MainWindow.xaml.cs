@@ -1,45 +1,45 @@
-﻿using NosTool.DataAccess.Interfaces;
-using NosTool.DataAccess.MSSQL.Entities;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
+﻿using Microsoft.EntityFrameworkCore;
+using NosTool.DataAccess.Interfaces;
+using NosTool.DataAccess.MSSQL.Context;
+using NosTool.DataAccess.MSSQL.Helpers;
+using NosTool.DataAccess.MSSQL.Repositories;
 using System.Windows;
 
 namespace NosTool.Tool
 {
     public partial class MainWindow : Window
     {
-        private readonly IShopRepository _shopRepository;
-
-        public ObservableCollection<ShopEntity> Shops { get; set; }
-
-        public MainWindow(IShopRepository shopRepository)
+        public MainWindow()
         {
             InitializeComponent();
-
-            _shopRepository = shopRepository;
-            Loaded += MainWindow_Loaded;
         }
 
-        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        private void ManageShops_Click(object sender, RoutedEventArgs e)
         {
-            LoadShopsData();
-            // Load other data as needed
+            // Create DbContextOptions for ApplicationDbContext
+            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
+                .UseSqlServer(DataAccessHelper.GetConnectionString())
+                .Options;
+
+            // Instantiate ApplicationDbContext with the options
+            var dbContext = new ApplicationDbContext(options);
+
+            // Instantiate IShopRepository
+            IShopRepository shopRepository = new ShopRepository(dbContext);
+
+            // Open the window for managing shops
+            var shopWindow = new ShopWindow(shopRepository);
+            shopWindow.Show();
+
+            // Optionally, close the main window
+            Close();
         }
 
-        private void LoadShopsData()
+        private void OtherFunctionality_Click(object sender, RoutedEventArgs e)
         {
-            var shopDtos = _shopRepository.GetShops();
-            Shops = new ObservableCollection<ShopEntity>(shopDtos);
-            ShopsDataGrid.ItemsSource = Shops;
-        }
-
-        // Button click event handler for debug logs
-        private void ShowDebugLogs_Click(object sender, RoutedEventArgs e)
-        {
-            // Add your debug log statements here
-            Debug.WriteLine("Debug logs for reading from the database, etc.");
-
-            // You can also use a logging library like Serilog or NLog for more advanced logging
+            // Open the window for other functionality
+            //var otherFunctionalityWindow = new OtherFunctionalityWindow();
+            //otherFunctionalityWindow.Show();
         }
     }
 }

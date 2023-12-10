@@ -6,7 +6,7 @@ namespace NosTool.DataAccess.MSSQL.Context
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<ShopEntity> Shops { get; set; }
+        public DbSet<ShopEntity> Shop { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
